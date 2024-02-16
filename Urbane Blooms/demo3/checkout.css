@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;1,300&display=swap');
+
+:root {
+    --pink: #e84393;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+}
+
+body{
+    background: #eee;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span {
+    color: #5D6B6B;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    justify-content: space-between;
+
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+
+}
+
+header .logo span {
+    color: var(--pink);
+
+}
+
+header .navbar a {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover {
+    color: var(--pink);
+
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+
+}
+
+header .icons a:hover {
+    color: var(--pink);
+
+}
+
+header #toggler {
+    display: none;
+
+}
+
+header .fa-bars {
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .3rem solid rgba(0, 0, 0, .3);
+    display: none;
+
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-image: linear-gradient( #bce1e1 ,rgba(181, 174, 181, 0.952));
+    padding-bottom: 70px;
+}
+
+.container form{
+    margin-top: 60px;
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+}
+
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col h4{
+    font-size: 15px;
+    margin-top: 24px;
+    color: #333;
+}
+
+.container form .row .col{
+    font-size: 15px;
+}
+
+.container form .row .col .inputBox{
+    margin: 20px 0;
+
+}
+
+
+.container form .row .col .inputBox span{
+    margin-bottom: 8px;
+    display: block;
+}
+.container form .row .col .inputBox textarea{
+    outline: 1px solid #ccc ;
+
+}
+
+.container form .row .col .inputBox textarea:focus{
+    border: 1px solid #000;
+
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+
+.container form .row .col .flex .inputBox img{
+    margin-top: 5px;
+    height: 34px;
+    filter: drop-shadow(0 0 1px #000);
+
+    }
+
+.container form .btn{
+    
+    text-align: end;
+}
+
+.container form .btn .submit-btn{
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    background: #333;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.container form .btn .cancel-btn{
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    color: #333;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+
+.container form .btn .submit-btn:hover{
+    background: #E6BEBE;
+}
+
+.container form .btn .cancel-btn:hover{
+    color: #f44336;
+}
+
+/*media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    header {
+        padding: 2rem;
+
+    }
+
+    section {
+        padding: 2rem;
+
+    }
+
+    .home {
+        background-position: left;
+
+    }
+}
+
+@media (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+
+    }
+    .customization{
+        display:flex;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0.1);
+
+
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+
+    }
+    .icons-container .icons h3 {
+        font-size: 2rem;
+
+    }
+
+    .icons-container .icons span {
+        font-size: 1.7rem;
+
+    }
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+
+/* Width of Customization */
+@media (max-width:991px) {
+    .product-preview .preview img{
+        height: 25rem ;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+
+       
+    }
+  }
+}
+
+}

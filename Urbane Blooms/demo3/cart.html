@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Products</title>
+
+  
+
+    <!--font awesone cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="cart.css" />
+    <script src="cart.js"></script>
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header>
+      <input type="checkbox" name="" id="toggler" aria-label="checkbox"/>
+      <label for="toggler" class="fas fa-bars"> </label>
+      <a href="#" class="logo">Urbane Blooms<span></span></a>
+
+      <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="home.html">ABOUT</a>
+        <a href="home.html">PRODUCTS</a>
+        <a href="home.html">REVIEWS</a>
+        <a href="home.html">CONTACT</a>
+      </nav>
+
+
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="user.html" class="fas fa-user"></a>
+        <a href="custom.html" class="fas fa-cloud"></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+   
+      <div class="container">
+        <div class="product" id="product1">
+            <img src="images/P1.png" alt="">
+            <h3>Enchanting Elegance</h3>
+            <p>Php 2500.00 </p>
+          <div class="buttonbox">
+            <button onclick="addToCart('Enchanting Elegance', 2500 )">Add to Cart</button>
+            <button onclick="" class="btnbuy">Buy</button>
+          </div>
+        </div>
+            
+        <div class="product" id="product2">
+            <img src="images/P2.png" alt="">
+            <h3>Blissful Blooms</h3>
+            <p>Price: Php 4500.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Blissful Blooms', 4500 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+           
+        <div class="product" id="product3">
+            <img src="images/P3.png" alt="">
+            <h3>Radiant Cascade</h3>
+            <p>Price: Php 1500.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Radiant Cascade', 1500 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product4">
+            <img src="images/P4.png" alt="">
+            <h3>Whispers of Love</h3>
+            <p>Price: Php 3600.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Whispers of Love', 3600 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product5">
+            <img src="images/P5.png" alt="">
+            <h3>Spring Symphony</h3>
+            <p>Price: Php 4000.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Spring Symphony', 4000 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product6">
+            <img src="images/P6.png" alt="">
+            <h3>Sunset Serenity</h3>
+            <p>Price: Php 2500.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Sunset Serenity', 2500 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product7">
+            <img src="images/P7.png" alt="">
+            <h3>Timeless Beauty</h3>
+            <p>Price: Php 3600.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Timeless Beauty', 3600 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product8">
+            <img src="images/P8.png" alt="">
+            <h3>Royal Splendor</h3>
+            <p>Price: Php 2900.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Royal Splendor', 2900 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="product" id="product9">
+            <img src="images/P9.png" alt="">
+            <h3>Celestial Charm</h3>
+            <p>Price: Php 2100.00</p>
+            <div class="buttonbox">
+                <button onclick="addToCart('Celestial Charm', 2100 )">Add to Cart</button>
+                <button onclick="" class="btnbuy">Buy</button>
+              </div>
+        </div>
+
+        <div class="cart-container">
+          <div class="cart" id="cart">
+              <h2>Shopping Cart</h2>
+              <div id="cart-items"></div>
+              <p>Total: Php <span id="cart-total">0.00</span></p>
+              <button class="checkout">Checkout</button>
+          </div>
+        </div>
+
+       
+    </div>
+
+
+
+    
+</body>
+</html>
+ 
+  

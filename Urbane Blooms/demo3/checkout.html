@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Payment Form</title>
+
+  
+
+    <!--font awesone cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <header>
+      <input type="checkbox" name="" id="toggler" aria-label="checkbox"/>
+      <label for="toggler" class="fas fa-bars"> </label>
+      <a href="#" class="logo">Urbane Blooms<span></span></a>
+
+      <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="home.html">ABOUT</a>
+        <a href="home.html">PRODUCTS</a>
+        <a href="home.html">REVIEWS</a>
+        <a href="home.html">CONTACT</a>
+      </nav>
+
+
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="user.html" class="fas fa-user"></a>
+        <a href="custom.html" class="fas fa-cloud"></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+
+   <!--payment form section starts here-->
+   
+   <div class="container">
+
+    <form action="">
+
+     <div class="row">
+
+         <div class="col">
+             <h3 class="title">
+                 Recipient Information
+             </h3>
+
+             <div class="inputBox">
+                 <span>Full name:</span>
+                 <input type="text" placeholder="" aria-label="fNAME">
+             </div>
+
+             <div class="inputBox">
+                 <span>Contact:</span>
+                 <input type="text" placeholder="" aria-label="contact">
+             </div>
+
+             <div class="inputBox">
+                 <span>Address:</span>
+                 <input type="text" placeholder="" aria-label="Address">
+             </div>
+
+             <div class="inputBox">
+                 <span>Landmark:</span>
+                 <input type="text" placeholder="" aria-label="landmark">
+             </div>
+
+             <div class="flex">
+                 <div class="inputBox">
+                     <span>City:</span>
+                     <input type="text" placeholder="" aria-label="city">
+                 </div>
+
+                 <div class="inputBox">
+                     <span>Zip Code:</span>
+                     <input type="text" placeholder="" aria-label="zcode">
+                 </div>
+             </div>
+
+              <h3 class="title">
+                Order Details 
+            </h3>
+
+              <div class="inputBox">
+                <span>Product Name:</span>
+                <input type="text" placeholder="" aria-label="pname">
+            </div>
+
+             <div class="inputBox">
+                <span>Total Quantity:</span>
+                <input type="number" placeholder="0">
+            </div>
+
+            <div class="inputBox">
+                <span>Total Price:</span>
+                <input type="text" placeholder="Php 000.00" >
+            </div>
+
+         </div>
+
+         <div class="col">
+            <h3 class="title">
+                Billings 
+            </h3>
+
+            <h4>Payment Method:</h4>
+            <br>
+            <input type="radio" aria-label="cD"> Cash on Delivery </input>
+            <br>
+            <input type="radio" aria-label="cC"> Credit Card </input>
+            <br>
+            <input type="radio" aria-label="eWallet"> E-Wallet (Gcash / Paypal) </input>
+             <div class="inputBox">
+                 <img src="images/card3.png" alt="">
+             </div>
+
+             <div class="inputBox">
+                 <span>Name on Card:</span>
+                 <input type="text" placeholder="" aria-label="name">
+             </div>
+
+             <div class="inputBox">
+                 <span>Credit Card Number:</span>
+                 <input type="text" placeholder="" aria-label="Address"cardNum>
+             </div>
+
+             <div class="inputBox">
+                 <span>Note:</span>
+                 <textarea name="" id="" cols="45" rows="11" aria-label="note"></textarea>
+             </div>
+
+             <div class="inputBox">
+                <span>Amount:</span>
+                <input type="text" placeholder="" aria-label="amount">
+            </div>
+
+         </div>
+
+     </div>
+     <div class="btn">
+        <input type="submit"    onclick= "checkout()" class="submit-btn">
+        <input type="submit"  value="Cancel" class="cancel-btn">
+     </div>
+
+    </form>
+ </div>
+
+    
+</body>
+</html>
+ 
+  

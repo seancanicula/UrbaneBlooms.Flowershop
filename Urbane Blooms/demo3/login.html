@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Urbane Blooms</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <div class="input-field" id="loginUsernameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="loginUsername" placeholder="Username" />
+                    </div>
+                    <div class="input-field" id="loginPasswordField">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="loginbtn">
+                    <button type="button" onclick="login()"><strong>Login</strong></button>
+                </div>
+                <div class="signup">
+                    <p>Don't have an account yet?<a href="reg.html"> <em>Sign up</em></a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
